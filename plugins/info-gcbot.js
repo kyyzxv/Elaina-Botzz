@@ -14,6 +14,6 @@ conn.sendButton(m.chat, str, `${botol}`, [['⋮☰ MENU','.menu']],m)
 }
 handler.help = ['gcbot']
 handler.tags = ['info']
-handler.command = /^gcbot$/i
+handler.command = /^gcbot|sc|script(s)$/i
 
 export default handler 
