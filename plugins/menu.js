@@ -71,7 +71,7 @@ const defaultMenu = {
   header: '┏━━━ꕥ〔 *%category* 〕ꕥ━⬣',
     body: '┃✾ %cmd %islimit %isPremium',
   footer: '┗━━━━━━━━━ꕥ\n',
-  after: `  ${'✧\n┏━📮 *Note* :\n┃ 𝙹𝙸𝙺𝙰 𝙼𝙴𝙻𝙰𝙽𝙶𝙶𝙰𝚁 𝚃𝙾𝚂 𝙰𝙺𝙰𝙽 𝙳𝙸 𝙱𝙰𝙽 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽! ^_^\n┗━━━━━━━━━━━━━━━━━━━ꕥ'}`,
+  after: `  ${'✧\n┏━📮 *Note* :\n┃Jangan Spam Yak ^_^\n┗━━━━━━━━━━━━━━━━━━━ꕥ'}`,
 }
 let handler = async (m, { conn, usedPrefix, __dirname }) => {
   try {
@@ -190,9 +190,9 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
 contextInfo: { externalAdReply :{ showAdAttribution: true,
                         sourceUrl: 'https://youtu.be/pwLZpdfO8AU',
                         mediaType: 2,
-                        description: `⚘ ᴄʀᴇᴀᴛᴇ ᴹᴿ᭄ King Of Bear ×፝֟͜×`,
+                        description: `⚘ Cerated By F4Q Store`,
                         title: `💌 Ultah Owner : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
-                        body: `⚘ ᴄʀᴇᴀᴛᴇ by ᴹᴿ᭄ King Of Bear ×፝֟͜×`,          previewType: 0,
+                        body: `⚘ Cerated By F4Q Store`,          previewType: 0,
                         thumbnail: await (await fetch(giflogo2)).buffer(),
                         mediaUrl: 'https://youtu.be/pwLZpdfO8AU'
                         
