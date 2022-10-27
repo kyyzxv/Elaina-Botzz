@@ -1,18 +1,21 @@
-let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
-let url = 'https://telegra.ph/file/6ab4daac226292a112540.jpg'
-let text = `━━ꕥ〔 *𝚂𝙴𝚆𝙰 & 𝙿𝚁𝙴𝙼𝙸𝚄𝙼* 〕ꕥ━⬣
+import fetch from 'node-fetch'
+let handler  = async (m, { conn, usedPrefix: _p }) => {
+let pp = await (await fetch(`https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=Group`))
+let botol = global.wm
+let str = `
+━━ꕥ〔 *Sewa & Premium* 〕ꕥ━⬣
 
-┏━ꕥ〔 𝙷𝙰𝚁𝙶𝙰 𝚂𝙴𝚆𝙰 〕
+┏━ꕥ〔 Harga Sewa 〕
 ┃
-┃✾ 15 ʜᴀʀɪ 3,5ᴋ / ɢʀᴏᴜᴘ
+┃✾ 15 ʜᴀʀɪ 5ᴋ / ɢʀᴏᴜᴘ
 ┃✾ 30 ʜᴀʀɪ 7ᴋ / ɢʀᴏᴜᴘ
-┃✾ 45 ʜᴀʀɪ 10,5ᴋ / ɢʀᴏᴜᴘ
-┃✾ 60 ʜᴀʀɪ 14ᴋ / ɢʀᴏᴜᴘ
+┃✾ 45 ʜᴀʀɪ 10ᴋ / ɢʀᴏᴜᴘ
+┃✾ 60 ʜᴀʀɪ 15ᴋ / ɢʀᴏᴜᴘ
 ┃✾ ᴘᴇʀᴍᴀɴᴇɴ 30ᴋ / ɢʀᴏᴜᴘ 
 ┃
-┗━━ꕥ *${author}* ꕥ━⬣
+┗━━ꕥ *Elaina Botz* ꕥ━⬣
 
-┏━ꕥ〔 𝙷𝙰𝚁𝙶𝙰 𝙿𝚁𝙴𝙼𝙸𝚄𝙼 〕
+┏━ꕥ〔 Harga Premium 〕
 ┃
 ┃✾ 15 ʜᴀʀɪ 5ᴋ 
 ┃✾ 30 ʜᴀʀɪ 10ᴋ 
@@ -20,9 +23,9 @@ let text = `━━ꕥ〔 *𝚂𝙴𝚆𝙰 & 𝙿𝚁𝙴𝙼𝙸𝚄𝙼* 〕�
 ┃✾ 60 ʜᴀʀɪ 20ᴋ 
 ┃✾ ᴘᴇʀᴍᴀɴᴇɴ 30ᴋ
 ┃
-┗━━ꕥ *${author}* ꕥ━⬣
+┗━━ꕥ *Elaina Botz* ꕥ━⬣
 
-┏━ꕥ〔 ꜰɪᴛᴜʀ 430+ 〕
+┏━ꕥ〔 ꜰɪᴛᴜʀ 450+ 〕
 ┃
 ┃✾ ᴡᴇʟᴄᴏᴍᴇ
 ┃✾ ᴋɪᴄᴋ
@@ -34,21 +37,15 @@ let text = `━━ꕥ〔 *𝚂𝙴𝚆𝙰 & 𝙿𝚁𝙴𝙼𝙸𝚄𝙼* 〕�
 ┃✾ ꜱᴇɴᴅ ʙᴜɢ
 ┃✾ ɢᴀᴍᴇ ʀᴘɢ
 ┃✾ ᴅʟʟ
-┃
-┗━━ꕥ *${author}* ꕥ━⬣
-`
-const templateButtons = [
-    {index: 1, urlButton: {displayText: 'Klick untuk berlangganan', url: 'https://wa.me/6288279268363?text=Hallo admin, saya tertarik untuk menyewa bot yuki adisty'}},
-    {index: 4, quickReplyButton: {displayText: 'Owner', id: '.owner'}},
-]
-let tm = {
-text: text,
-footer: global.wm,
-templateButtons: templateButtons,
-image: url
+┃ 
+┗━━ꕥ *Elaina Botz* ꕥ━⬣
+ • Hubungi:
+   Https://wa.me/+62858-3179-6696
+`.trim()
+conn.sendButton(m.chat, str, `${botol}`, [['Owner','.owner']],m)
 }
-conn.sendMessage(m.chat, tm, m)
-}
-handler.command = /^(sewabot|sewa|belibot|buyprem)$/i
+handler.help = ['gcbot']
+handler.tags = ['info']
+handler.command = /^belibot|sewa|sewabot|premium|buyprem$/i
 
 export default handler
