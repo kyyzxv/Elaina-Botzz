@@ -17,10 +17,10 @@ user.joinlimit -= 1
 }
 handler.help = ['join <chat.whatsapp.com>']
 handler.tags = ['premium']
-handler.premium = true
+handler.premium = false
 handler.private = true
 handler.limit = true
-handler.owner = true
+handler.owner = false
 
 handler.command = /^join$/i
 
