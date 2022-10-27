@@ -172,7 +172,7 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
     const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
     const menu = './media/menu.jpg'
     const valor = './thumbnail.jpg'
-    let url = 'https://i.ibb.co/jfZVKmC/babi2.jpg'
+    let url = 'https://telegra.ph/file/3496c704a03aa28cbb5e5.jpg'
     let flaa = pickRandom(global.flaaaaa)
     const ultah = new Date('November 4 2022 00:00:01')
     const sekarat = new Date().getTime() 
@@ -183,15 +183,16 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
     const detek = Math.floor( Kurang % (1000 * 60) / 1000)
     conn.sendButton(m.chat,
 `${wish()} ${name}
-`, text.trim(), `${flaa}All Menu`, [
-      [`ꜱᴇᴡᴀʙᴏᴛ`, `${usedPrefix}sewa`],
-      [`۪۪ᴀᴜᴛʜᴏʀ ʙᴏᴛ`, `${usedPrefix}owner`]
+`, text.trim(), `${flaa} Menu nya euy`, [
+      [`Sewa Bot`, `${usedPrefix}sewa`],
+      [`۪۪Group Bot`, `${usedPrefix}gcbo`],
+      [`۪۪Owner`, `${usedPrefix}owner`]
     ], m, {
 contextInfo: { externalAdReply :{ showAdAttribution: true,
                         sourceUrl: 'https://youtu.be/pwLZpdfO8AU',
                         mediaType: 2,
                         description: `⚘ Cerated By F4Q Store`,
-                        title: `💌 Ultah Owner : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
+                        title: `Kalo Spam Gw Banned Lu🗿`,
                         body: `⚘ Cerated By F4Q Store`,          previewType: 0,
                         thumbnail: await (await fetch(giflogo2)).buffer(),
                         mediaUrl: 'https://youtu.be/pwLZpdfO8AU'
