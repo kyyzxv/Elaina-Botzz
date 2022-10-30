@@ -191,9 +191,9 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
 contextInfo: { externalAdReply :{ showAdAttribution: true,
                         sourceUrl: 'https://youtu.be/pwLZpdfO8AU',
                         mediaType: 2,
-                        description: `⚘ Cerated By F4Q Store`,
+                        description: `⚘ Cerated By Kyyzxv`,
                         title: `Kalo Spam Gw Banned Lu🗿`,
-                        body: `⚘ Cerated By F4Q Store`,          previewType: 0,
+                        body: `⚘ Cerated By Kyyzxv`,          previewType: 0,
                         thumbnail: await (await fetch(giflogo2)).buffer(),
                         mediaUrl: 'https://youtu.be/pwLZpdfO8AU'
                         
