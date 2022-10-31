@@ -6,7 +6,7 @@ export async function before(m) {
     let user = global.db.data.users[m.sender]
     let txt = `👋Hai, ${ucapan()}
 
-${user.banned ? '📮Maaf, kamu dibanned & Tidak bisa menggunakan bot ini lagi' : `💬 Ada yg bisa 𝑽𝑿_𝑩𝑶𝑻𝒁 bantu?\nInfo: Gunakan fitur .join dan bot akan masuk ke grup kamu selama 1 hari\n\n*CONTOH:*\n.join https://chat.whatsapp.com/I5KoJMPEP6z19GZXQ7OpJ7\n\nMaka Botnya akan masuk ke grup kamu`}`.trim()
+${user.banned ? '📮Maaf, kamu dibanned & Tidak bisa menggunakan bot ini lagi' : `💬 Ada yg bisa 𝑽𝑿_𝑩𝑶𝑻𝒁 bantu?\nInfo: Premium kereset? chat owner segera!\n\n*CONTOH:*\nAyojoin https://chat.whatsapp.com/I5KoJMPEP6z19GZXQ7OpJ7\n\nAyo masuk`}`.trim()
 
     if (new Date() - user.pc < 21600000) return // waktu ori 21600000 (6 jam)
     await this.sendButton(m.chat, txt, user.banned ? wm : '📮Note: Jangan spam bot nya', [user.banned ? 'MENU' : 'MENU', user.banned ? '.menu' : '.menu'], m)
