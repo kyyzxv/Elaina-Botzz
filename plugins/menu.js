@@ -172,9 +172,9 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
     const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
     const menu = './media/menu.jpg'
     const valor = './thumbnail.jpg'
-    let url = 'https://telegra.ph/file/3496c704a03aa28cbb5e5.jpg'
+    let url = 'https://telegra.ph/file/0c668d80b4942769ab9dc.jpg'
     let flaa = pickRandom(global.flaaaaa)
-    const ultah = new Date('November 4 2022 00:00:01')
+    const ultah = new Date('April 22 2023 00:00:01')
     const sekarat = new Date().getTime() 
     const Kurang = ultah - sekarat
     const ohari = Math.floor( Kurang / (1000 * 60 * 60 * 24));
@@ -189,13 +189,13 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
       [`۪۪Owner`, `${usedPrefix}owner`]
     ], m, {
 contextInfo: { externalAdReply :{ showAdAttribution: true,
-                        sourceUrl: 'https://youtu.be/pwLZpdfO8AU',
+                        sourceUrl: 'https://telegra.ph/file/0c668d80b4942769ab9dc.jpg',
                         mediaType: 2,
                         description: `⚘ Cerated By Kyyzxv`,
                         title: `Kalo Spam Gw Banned Lu🗿`,
                         body: `⚘ Cerated By Kyyzxv`,          previewType: 0,
                         thumbnail: await (await fetch(giflogo2)).buffer(),
-                        mediaUrl: 'https://youtu.be/pwLZpdfO8AU'
+                        mediaUrl: 'https://telegra.ph/file/0c668d80b4942769ab9dc.jpg'
                         
                       }}
 })
