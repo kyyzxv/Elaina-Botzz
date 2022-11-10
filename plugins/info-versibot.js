@@ -8,7 +8,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     const ojam = Math.floor( Kurang % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
     const onet = Math.floor( Kurang % (1000 * 60 * 60) / (1000 * 60))
     const detek = Math.floor( Kurang % (1000 * 60) / 1000)
-  let info = `Bot ini menggunakan script by\n F4Q Store \n\n*Version:* Private Edition V3`
+  let info = `Bot ini menggunakan script by\n kyyzxv_ \n\n*Version:* Private Edition V3`
 
 let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 const message = {
@@ -20,7 +20,7 @@ const message = {
                 {
                     urlButton: {
                         displayText: 'Beli Sc? Klik',
-                        url: 'https://wa.me/+62858-3179-6696'
+                        url: 'https://wa.me/+62822-8696-1617'
                     }
                 },
                 {
@@ -34,13 +34,13 @@ const message = {
         conn.sendMessage(m.chat, message)
 conn.reply(m.chat, info, m, {
 contextInfo: { externalAdReply :{ showAdAttribution: true,
-                        sourceUrl: 'https://youtu.be/pwLZpdfO8AU',
+                        sourceUrl: 'https://telegra.ph/file/def6eb316c315c4c1e908.jpg',
                         mediaType: 2,
-                        description: `⚘ ᴄʀᴇᴀᴛᴇ ᴹᴿ᭄ King Of Bear ×፝֟͜×`,
+                        description: `⚘ ᴄʀᴇᴀᴛᴇ kyyzxv_`,
                         title: `💌 Ultah Owner : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
                         body: `⚘ ᴄʀᴇᴀᴛᴇ by ᴹᴿ᭄ King Of Bear ×፝֟͜×`,          previewType: 0,
                         thumbnail: await (await fetch(giflogo2)).buffer(),
-                        mediaUrl: 'https://youtu.be/pwLZpdfO8AU'
+                        mediaUrl: 'https://telegra.ph/file/def6eb316c315c4c1e908.jpg'
                         
                       }}
 })
