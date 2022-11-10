@@ -23,7 +23,7 @@ ${botdate}
 `
         let img1 = fs.readFileSync('./thumbnail.jpg');
         let img2 = fs.readFileSync('./media/bawah.png');
-    return conn.sendButton(m.chat, hiasan, sewa, await (await fetch(`https://telegra.ph/file/0c668d80b4942769ab9dc.jpg`)).buffer(), [["Menu", usedPrefix + "menu"], ["Sewa Bot", usedPrefix + "sewa"]], m, {
+    return conn.sendButton(m.chat, hiasan, sewa, await (await fetch(`https://telegra.ph/file/def6eb316c315c4c1e908.jpg`)).buffer(), [["Menu", usedPrefix + "menu"], ["Sewa Bot", usedPrefix + "sewa"]], m, {
         contextInfo: {
             externalAdReply: {
                 mediaUrl: '',
@@ -31,8 +31,8 @@ ${botdate}
                         description: 'anu',
                         title: `💌 Ultah Owner : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
                         body: `Kyyzxv`,                                       previewType: 0,
-                        thumbnail: await (await fetch(`https://i.ibb.co/jfZVKmC/babi2.jpg`)).buffer(),
-                        sourceUrl: 'https://telegra.ph/file/0c668d80b4942769ab9dc.jpg'
+                        thumbnail: await (await fetch(`https://telegra.ph/file/def6eb316c315c4c1e908.jpg`)).buffer(),
+                        sourceUrl: 'https://telegra.ph/file/def6eb316c315c4c1e908.jpg'
             }
         }
     })
